@@ -1,5 +1,5 @@
 # audio_extractor.py
-# This script extracts audio from a YouTube video (URL) or a downloaded video file.
+# This script extracts audio from a YouTube video (URL) 
 # Requirements: pytube, moviepy
 
 import os
