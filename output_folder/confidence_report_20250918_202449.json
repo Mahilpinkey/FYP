@@ -1,0 +1,266 @@
+{
+  "transcript": " English thing thing The lion and the mouse A lion was sleeping under a tree A little mouse was playing around the lion Drill Squeeek Suddenly, the lion woke up Whooo woke me up I'll eat you The lion picked up the mouse and opened his mouth Oh no! Please don't eat me. If you let me go, I will help you one day. Ha ha ha! You? I'm a lion. And you're a mouse. What can you do? The lion laughed. Fine. I'll let you go. The mouse ran away. The next day, the lion got caught in a trap. The mouse saw this. Ran to the lion. It began to chew the rope. Thank you. You saved my life. From that day, the lion and mouse became best friends. Follow after me. A lion was sleeping under a tree. A little mouse was playing around the lion. Suddenly, the lion woke up. Who woke me up? I will eat you. The lion picked up the mouse and opened his mouth. Oh no! Please don't eat me. If you let me go, I will help you one day. Ha ha ha! You? I'm a lion. And you're a mouse. What can you do? The lion laughed. Fine. I'll let you go. The mouse ran away. The next day, the lion got caught in a trap. The mouse saw this. Ran to the lion. It began to chew the rope. Thank you. You saved my life. From that day, the lion and mouse became best friends. Now your turn.",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 3.36,
+      "text": " English thing thing",
+      "avg_logprob": -0.7719205798524799,
+      "confidence": 0.46212466813561515,
+      "status": "Medium"
+    },
+    {
+      "id": 1,
+      "start": 7.46,
+      "end": 10.3,
+      "text": " The lion and the mouse",
+      "avg_logprob": -0.7719205798524799,
+      "confidence": 0.46212466813561515,
+      "status": "Medium"
+    },
+    {
+      "id": 2,
+      "start": 13.52,
+      "end": 17.68,
+      "text": " A lion was sleeping under a tree",
+      "avg_logprob": -0.7719205798524799,
+      "confidence": 0.46212466813561515,
+      "status": "Medium"
+    },
+    {
+      "id": 3,
+      "start": 20.080000000000002,
+      "end": 24.8,
+      "text": " A little mouse was playing around the lion",
+      "avg_logprob": -0.7719205798524799,
+      "confidence": 0.46212466813561515,
+      "status": "Medium"
+    },
+    {
+      "id": 4,
+      "start": 25.0,
+      "end": 26.580000000000002,
+      "text": " Drill",
+      "avg_logprob": -2.046686571697856,
+      "confidence": 0.12916216491981922,
+      "status": "Low"
+    },
+    {
+      "id": 5,
+      "start": 28.82,
+      "end": 30.14,
+      "text": " Squeeek",
+      "avg_logprob": -2.046686571697856,
+      "confidence": 0.12916216491981922,
+      "status": "Low"
+    },
+    {
+      "id": 6,
+      "start": 32.14,
+      "end": 35.32,
+      "text": " Suddenly, the lion woke up",
+      "avg_logprob": -2.046686571697856,
+      "confidence": 0.12916216491981922,
+      "status": "Low"
+    },
+    {
+      "id": 7,
+      "start": 40.32,
+      "end": 41.7,
+      "text": " Whooo woke me up",
+      "avg_logprob": -2.046686571697856,
+      "confidence": 0.12916216491981922,
+      "status": "Low"
+    },
+    {
+      "id": 8,
+      "start": 43.42,
+      "end": 45.14,
+      "text": " I'll eat you",
+      "avg_logprob": -2.046686571697856,
+      "confidence": 0.12916216491981922,
+      "status": "Low"
+    },
+    {
+      "id": 9,
+      "start": 48.1,
+      "end": 53.42,
+      "text": " The lion picked up the mouse and opened his mouth",
+      "avg_logprob": -2.046686571697856,
+      "confidence": 0.12916216491981922,
+      "status": "Low"
+    },
+    {
+      "id": 10,
+      "start": 54.8,
+      "end": 65.8,
+      "text": " Oh no! Please don't eat me. If you let me go, I will help you one day.",
+      "avg_logprob": -0.3182839584350586,
+      "confidence": 0.7273962087968535,
+      "status": "High"
+    },
+    {
+      "id": 11,
+      "start": 65.8,
+      "end": 77.8,
+      "text": " Ha ha ha! You? I'm a lion. And you're a mouse. What can you do?",
+      "avg_logprob": -0.3182839584350586,
+      "confidence": 0.7273962087968535,
+      "status": "High"
+    },
+    {
+      "id": 12,
+      "start": 77.8,
+      "end": 91.8,
+      "text": " The lion laughed. Fine. I'll let you go. The mouse ran away.",
+      "avg_logprob": -0.21452545589870878,
+      "confidence": 0.8069242704879586,
+      "status": "High"
+    },
+    {
+      "id": 13,
+      "start": 91.8,
+      "end": 105.8,
+      "text": " The next day, the lion got caught in a trap. The mouse saw this. Ran to the lion.",
+      "avg_logprob": -0.21452545589870878,
+      "confidence": 0.8069242704879586,
+      "status": "High"
+    },
+    {
+      "id": 14,
+      "start": 105.8,
+      "end": 118.8,
+      "text": " It began to chew the rope. Thank you. You saved my life.",
+      "avg_logprob": -0.1883574832569469,
+      "confidence": 0.828318544288186,
+      "status": "High"
+    },
+    {
+      "id": 15,
+      "start": 118.8,
+      "end": 127.8,
+      "text": " From that day, the lion and mouse became best friends.",
+      "avg_logprob": -0.1883574832569469,
+      "confidence": 0.828318544288186,
+      "status": "High"
+    },
+    {
+      "id": 16,
+      "start": 127.8,
+      "end": 148.8,
+      "text": " Follow after me. A lion was sleeping under a tree.",
+      "avg_logprob": -0.18595236539840698,
+      "confidence": 0.8303131456758261,
+      "status": "High"
+    },
+    {
+      "id": 17,
+      "start": 148.8,
+      "end": 169.8,
+      "text": " A little mouse was playing around the lion.",
+      "avg_logprob": -0.09703570145827073,
+      "confidence": 0.9075236056387672,
+      "status": "High"
+    },
+    {
+      "id": 18,
+      "start": 169.8,
+      "end": 180.8,
+      "text": " Suddenly, the lion woke up.",
+      "avg_logprob": -0.2168663198297674,
+      "confidence": 0.8050375796728494,
+      "status": "High"
+    },
+    {
+      "id": 19,
+      "start": 180.8,
+      "end": 201.8,
+      "text": " Who woke me up? I will eat you.",
+      "avg_logprob": -0.20130642822810582,
+      "confidence": 0.8176618384930673,
+      "status": "High"
+    },
+    {
+      "id": 20,
+      "start": 201.8,
+      "end": 216.8,
+      "text": " The lion picked up the mouse and opened his mouth.",
+      "avg_logprob": -0.0992602030436198,
+      "confidence": 0.9055070616734626,
+      "status": "High"
+    },
+    {
+      "id": 21,
+      "start": 216.8,
+      "end": 239.8,
+      "text": " Oh no! Please don't eat me. If you let me go, I will help you one day.",
+      "avg_logprob": -0.12527028413919303,
+      "confidence": 0.8822584099007866,
+      "status": "High"
+    },
+    {
+      "id": 22,
+      "start": 239.8,
+      "end": 256.8,
+      "text": " Ha ha ha! You? I'm a lion. And you're a mouse.",
+      "avg_logprob": -0.13193046478998094,
+      "confidence": 0.8764019337531817,
+      "status": "High"
+    },
+    {
+      "id": 23,
+      "start": 256.8,
+      "end": 277.8,
+      "text": " What can you do? The lion laughed. Fine. I'll let you go.",
+      "avg_logprob": -0.11847057796659924,
+      "confidence": 0.8882779502158571,
+      "status": "High"
+    },
+    {
+      "id": 24,
+      "start": 277.8,
+      "end": 300.8,
+      "text": " The mouse ran away. The next day, the lion got caught in a trap.",
+      "avg_logprob": -0.08081813085646856,
+      "confidence": 0.9223614252737827,
+      "status": "High"
+    },
+    {
+      "id": 25,
+      "start": 300.8,
+      "end": 323.8,
+      "text": " The mouse saw this. Ran to the lion. It began to chew the rope.",
+      "avg_logprob": -0.1257594767070952,
+      "confidence": 0.8818269211928335,
+      "status": "High"
+    },
+    {
+      "id": 26,
+      "start": 323.8,
+      "end": 335.8,
+      "text": " Thank you. You saved my life.",
+      "avg_logprob": -0.15993227561314902,
+      "confidence": 0.8522015018360902,
+      "status": "High"
+    },
+    {
+      "id": 27,
+      "start": 335.8,
+      "end": 356.8,
+      "text": " From that day, the lion and mouse became best friends.",
+      "avg_logprob": -0.13539177179336548,
+      "confidence": 0.8733736814808687,
+      "status": "High"
+    },
+    {
+      "id": 28,
+      "start": 356.8,
+      "end": 377.8,
+      "text": " Now your turn.",
+      "avg_logprob": -0.508629390171596,
+      "confidence": 0.6013191882491595,
+      "status": "High"
+    }
+  ]
+}

@@ -2,6 +2,8 @@ import os
 import yt_dlp
 from pydub import AudioSegment
 from datetime import datetime
+import math
+import json
 
 # ✅ NLP imports
 import nltk
@@ -10,7 +12,7 @@ from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 
 import spacy
-import whisper  # ✅ NEW
+import whisper  
 
 # ✅ Punctuation restoration model
 from deepmultilingualpunctuation import PunctuationModel
@@ -367,7 +369,45 @@ def audio_to_text(audio_file, output_text_file="transcription.txt"):
     print("Converting audio to text with Whisper...")
     model = whisper.load_model("base")  # "tiny", "base", "small", "medium", "large"
     result = model.transcribe(wav_path, language="en")
-    full_text = result["text"]
+    full_text = result.get("text", "")
+
+    # ----------------- NEW: Confidence / avg_logprob report -----------------
+    segments = result.get("segments", [])
+    confidence_report = []
+    for seg in segments:
+        avg_lp = seg.get("avg_logprob", None)
+        try:
+            confidence = math.exp(avg_lp) if avg_lp is not None else None
+        except Exception:
+            confidence = None
+
+        # Status thresholds (tune if needed)
+        if confidence is None:
+            status = "Unknown"
+        elif confidence >= 0.6:
+            status = "High"
+        elif confidence >= 0.37:
+            status = "Medium"
+        else:
+            status = "Low"
+
+        confidence_report.append({
+            "id": seg.get("id"),
+            "start": seg.get("start"),
+            "end": seg.get("end"),
+            "text": seg.get("text"),
+            "avg_logprob": avg_lp,
+            "confidence": confidence,
+            "status": status
+        })
+
+    conf_file = os.path.join(OUTPUT_FOLDER, f"confidence_report_{timestamp}.json")
+    try:
+        with open(conf_file, "w", encoding="utf-8") as f:
+            json.dump({"transcript": full_text, "segments": confidence_report}, f, ensure_ascii=False, indent=2)
+        print(f"✅ Confidence report saved: {conf_file}")
+    except Exception as e:
+        print(f"❌ Failed to save confidence report: {e}")
 
     # ✅ Restore punctuation
     print("⏳ Restoring punctuation...")
@@ -404,7 +444,6 @@ def audio_to_text(audio_file, output_text_file="transcription.txt"):
 
 # ------------------- MAIN -------------------
 if __name__ == "__main__":
-    youtube_url = "https://www.youtube.com/watch?v=GygBY01Qbnk"
+    youtube_url = "https://www.youtube.com/watch?v=z46K8WqBFnw&t=15s"
     audio_path = download_youtube_audio(youtube_url)
     transcript, glosses = audio_to_text(audio_path, "video_transcription.txt")
-    
